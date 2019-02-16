@@ -4,6 +4,6 @@ services:
 before_install:
   - docker build -t monkalways/react-app-dev -f Dockerfile.dev .
 
-scripts:
+script:
   - docker run monkalways/react-app-dev npm test -- --coverage
 
